@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Jacquarda+Bastarda+9&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Jacquarda+Bastarda+9&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet');
 
 html, body{
 	height: 100%;
@@ -8,9 +10,14 @@ html, body{
 }
 
 .title-textbox{
-	width: 100 px;
-	padding: 20 px;
-	border: 2px solid red
+	width: 460px;
+
+	position: absolute;
+	top: 0;
+	left:0;
+
+	margin: 0;
+
 	box-sizing: border-box;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -18,6 +25,33 @@ html, body{
 
 	font-family:"Libre Barcode 128 Text", system-ui, sans-serif;
 	color: #4F5056;
-	font-size: 260px;
+	font-size: 250px;
 	font-weight: 100;
+}
+
+.title2{
+	width: 80px;
+
+	margin: 0;
+
+	position: absolute;
+	right: 300px;
+	top: 120px;
+	/**transform: translateX(50px);*/
+
+	font-family:"Jacquarda Bastarda 9", serif;
+	color: #644968;
+	font-size: 100px;
+	font-weight: 100;
+}
+
+.title3{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color:black;
+	font-size: 500px;
+	font-weight: 400;
 }
