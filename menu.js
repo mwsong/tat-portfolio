@@ -22,3 +22,18 @@ menuButton.addEventListener('mouseleave', () => {
     plusSign.classList.remove('hidden');
     menuItems.classList.remove('visible');
 });
+
+//video!!! 
+
+const video1 = document.getElementById('video1');
+const video2 = document.getElementById('video2');
+
+video1.play();
+video2.play();
+
+// Keep videos in sync
+video1.addEventListener('timeupdate', () => {
+    if (Math.abs(video1.currentTime - video2.currentTime) > 0.1) {
+        video2.currentTime = video1.currentTime;
+    }
+});

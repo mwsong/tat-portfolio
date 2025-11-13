@@ -6,7 +6,7 @@
 html, body{
 	height: 100%;
 	margin: 0;
-	background-color: #E8E3D0;
+	background-color: #ddd8c8dd;
 }
 
 .title1{
@@ -36,7 +36,7 @@ html, body{
 
 	position: absolute;
 	right: 300px;
-	top: 120px;
+	top: 90px;
 	/**transform: translateX(50px);*/
 
 	font-family:"Jacquarda Bastarda 9", serif;
@@ -70,7 +70,7 @@ html, body{
 
 .menu-button{
 	background-color: #4F5056;
-	border-radius: 6px;
+	/*border-radius: 6px;*/
 	width: 60px;
 	height: 60px;
 	transition: all 0.3s ease;
@@ -134,9 +134,51 @@ html, body{
 	background-color:antiquewhite;
 	opacity: 0.3;
 	height: 40px;
-	border-radius: 8px;
+	/*border-radius: 8px;*/
 }
 
 .menu-text{
 	font-weight: 500;
+}
+
+
+/* front page video */
+.video-text-sandwich {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-top:200px;
+	top:10px;
+}
+
+.video-top {
+    width: 920px;
+    height: 340px; 
+	object-fit: cover;
+    overflow: hidden;
+    position: relative;
+	transform: translateX(-10%);
+	mix-blend-mode: multiply;
+	opacity: 0.8;
+
+}
+
+.video-bottom {
+	width: 100px; 
+    height: 340px; 
+	object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+	transform: translateX(460px);
+	top: 380px;
+}
+
+.img1{
+	width: 580px;
+	height: 210px;
+	object-fit: cover;
+	top: 390px;
+	position: absolute;
+	transform: translateX(800px);
+	mix-blend-mode: difference;
 }
