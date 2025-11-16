@@ -34,7 +34,7 @@
 
     <div class="video-text-sandwich">
     <div class="video-top">
-        <video id="video1" muted loop>
+        <video id="video1" muted playsinline autoplay loop>
             <source src="images/tattoo-warp.mp4" type="video/mp4">
         </video>
     </div>
@@ -42,7 +42,7 @@
     <h2 class="title3">GETHURT</h2>
     
     <div class="video-bottom">
-        <video id="video2" muted loop>
+        <video id="video2" muted playsinline autoplay loop>
             <source src="images/tattoo-warp.mp4" type="video/mp4">
         </video>
     </div>
@@ -50,9 +50,59 @@
 
   <img src="images/header-image1.jpg" class="img1">
 
-    <script src="menu.js"></script>
-  
+  <p class="p1">
+    Hi, my name’s Melissa and I’ve been doing stick-n-poke tattoos since I was 16. I’m NOT a formal tattoo artist!!!! I started tattooing for very personal reasons and I only want to share a part of me :p. Currently ONLY doing flashes! So if you’re interested, scroll down.
+  </p>
+
+  <div id="ascii-grid"></div>
+
+  <div class="image-container stacked" id="imageContainer">
+        <div class="image-wrapper" data-index="0">
+            <img src="images/ya.JPG" class="main-image">
+            <img src="images/phone.jpg" class="alt-image" style="opacity: 0;" >
+        </div>
+        <div class="image-wrapper" data-index="1">
+            <img src="images/frog.jpg" class="main-image"">
+            <img src="images/foot.jpg" class="alt-image" style="opacity: 0;">
+        </div>
+        <div class="image-wrapper" data-index="2">
+            <img src="images/sf.jpg" class="main-image" >
+            <img src="images/tree.jpg" class="alt-image" style="opacity: 0;" >
+        </div>
+        <div class="image-wrapper" data-index="3">
+            <img src="images/oh.jpg" class="main-image" >
+            <img src="images/tats.jpg" class="alt-image" style="opacity: 0;">
+        </div>
+        <div class="image-wrapper" data-index="4">
+            <img src="images/teef.JPG" class="main-image" >
+            <img src="images/shoe.jpg" class="alt-image" style="opacity: 0;" alt="Alt 5">
+        </div>
+    </div>
+    <script src="image-line.js"></script>
+
   </body>
+  <svg width="0" height="0" style="display:block; position:absolute;">
+    <filter id="pixelate-safe" x="0" y="0" width="100%" height="100%">
+      <feTurbulence 
+        type="fractalNoise"
+        baseFrequency="4.5"
+        numOctaves="1"
+        stitchTiles="stitch"
+        result="noise" />
+
+      <feColorMatrix type="matrix"
+        values="
+          1 0 0 0 0
+          0 1 0 0 0
+          0 0 1 0 0
+          0 0 0 400 -200"
+        result="maxblock"/>
+
+      <feBlend in="SourceGraphic" in2="maxblock" mode="multiply"/>
+    </filter>
+  </svg>
+
+  <script src="menu.js"></script>
 
 </html>
 
